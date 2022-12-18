@@ -106,7 +106,7 @@ namespace UniverseLib
                     try
                     {
                         // load and resolve the assembly's types.
-                        Assembly asm = Assembly.LoadFile(dllPath);
+                        Assembly asm = Assembly.LoadFrom(dllPath);
                         asm.GetTypes();
                     }
                     catch { }
